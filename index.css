@@ -3,36 +3,31 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  background-color: #124559;
+  background-color: #8ecae6;
+  height: 100vh;
 }
 
 #drum-machine {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin: 0 auto;
-  width: 50vw;
-  min-width: 500px;
-  height: 300px;
-  border: px solid black;
-  background-color: #F5E0B7;
+  border: 4px solid #fb8500;
+  background-color: #023047;
   border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #button-container {
-  position: absolute;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
-  width: 60%;
-  height: 60%;
+  grid-gap: 1rem;
+  margin: 2rem;
 }
 
 .drum-pad {
@@ -40,8 +35,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #598392;
-  height: 100%;
+  background-color: #219ebc;
   padding: 10px;
   vertical-align: middle;
   border-radius: 0.5rem;
@@ -49,18 +43,16 @@ body {
 }
 
 #display {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 5%;
   border: 1px solid black;
-  width: 180px;
-  height: 60px;
+  width: 10rem;
+  height: 4rem;
   border-radius: 0.5rem;
-  background-color: #598392;
+  background-color: #219ebc;
+  margin: 2rem;
+  border: 1px solid #fb8500;
 }
 
 /*# sourceMappingURL=index.css.map */

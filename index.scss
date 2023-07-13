@@ -1,26 +1,7 @@
-$bg-color: #124559;
-$drum-machine-color: #F5E0B7;
-$button-color: #598392;
-
-@mixin center-horizontally() {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@mixin center-vertically() {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-@mixin center() {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
+$bg-color: #8ecae6;
+$drum-machine-color: #023047;
+$button-color: #219ebc;
+$contrast-color: #fb8500;
 
 @mixin center-content() {
     display: flex;
@@ -33,39 +14,36 @@ $button-color: #598392;
 }
 
 body {
+    @include center-content();
     margin: 0;
     background-color: $bg-color;
+    height: 100vh;
 }
 
 
 #drum-machine {
-    @include center;
     margin: 0 auto;
-    width: 50vw;
-    min-width: 500px;
-    height: 300px;
-    border: px solid black;
+    border: 4px solid $contrast-color;
     background-color: $drum-machine-color;
     border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #button-container {
-    position: absolute;
-    @include center-vertically();
-    left: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-    width: 60%;
-    height: 60%
+    grid-gap: 1rem;
+    margin: 2rem;
 }
 
 .drum-pad {
     @include center-content();
     cursor: pointer;
     background-color: $button-color;
-    height: 100%;
     padding: 10px;
     vertical-align: middle;
     border-radius: 0.5rem;
@@ -73,12 +51,12 @@ body {
 }
 
 #display {
-    @include center-vertically();
     @include center-content();
-    right: 5%;
     border: 1px solid black;
-    width: 180px;
-    height: 60px;
+    width: 10rem;
+    height: 4rem;
     border-radius: 0.5rem;
     background-color: $button-color;
+    margin: 2rem;
+    border: 1px solid $contrast-color
 }

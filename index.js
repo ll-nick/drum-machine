@@ -15,10 +15,10 @@ function displayName(el) {
 async function activateThenDeactivate(el) {
     displayName(el)
 
-    el.css("background-color", "orange")
+    el.css("background-color", "#fb8500")
     await new Promise(r => setTimeout(r, 400));
 
-    el.css("background-color", "#598392")
+    el.css("background-color", "#219ebc")
     await new Promise(r => setTimeout(r, 1000));
     $('#display')[0].textContent = ''
 }
