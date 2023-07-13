@@ -1,4 +1,5 @@
 $bg-color: #124559;
+$drum-machine-color: #F5E0B7;
 $button-color: #598392;
 
 @mixin center-horizontally() {
@@ -43,7 +44,8 @@ body {
     width: 50vw;
     min-width: 500px;
     height: 300px;
-    border: 2px solid black;
+    border: px solid black;
+    background-color: $drum-machine-color;
     border-radius: 1rem;
 }
 
@@ -67,6 +69,7 @@ body {
     padding: 10px;
     vertical-align: middle;
     border-radius: 0.5rem;
+    border: 1px solid black;
 }
 
 #display {
@@ -77,4 +80,5 @@ body {
     width: 180px;
     height: 60px;
     border-radius: 0.5rem;
+    background-color: $button-color;
 }
