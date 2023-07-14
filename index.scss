@@ -22,12 +22,11 @@ body {
 
 
 #drum-machine {
-    margin: 0 auto;
     border: 4px solid $contrast-color;
     background-color: $drum-machine-color;
     border-radius: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -37,14 +36,14 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 .drum-pad {
     @include center-content();
     cursor: pointer;
     background-color: $button-color;
-    padding: 10px;
+    padding: 1rem;
     vertical-align: middle;
     border-radius: 0.5rem;
     border: 1px solid black;
@@ -54,7 +53,7 @@ body {
     @include center-content();
     border: 1px solid black;
     width: 10rem;
-    height: 4rem;
+    height: 3rem;
     border-radius: 0.5rem;
     background-color: $button-color;
     margin: 2rem;
